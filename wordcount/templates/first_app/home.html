@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <form action="{% url 'count' %}">
+      <!-- name fulltext goes in url as paramater -->
+      <textarea name="fulltext" rows="8" cols="80"></textarea>
+      <br/>
+      <input type="submit" value="Count!">
+    </form>
+    <br/>
+    <a href="{% url 'about' %}">About</a>
+  </body>
+</html>
